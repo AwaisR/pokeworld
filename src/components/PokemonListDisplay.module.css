@@ -1,0 +1,35 @@
+.container {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    margin: 0;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+  
+  .listContainer {
+    overflow: auto;
+    max-height: 400px;
+  
+    gap: 8px;
+    display: grid;
+    grid-template-columns: 20px 160px auto;
+  }
+  
+  .pokemonList {
+    display: contents;
+    padding-block: 2px;
+    text-transform: capitalize;
+  }
+  .pokemonList.selected,
+  .pokemonList:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .searchInput {
+    padding: 8px 16px;
+  }
+  
